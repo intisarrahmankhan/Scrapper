@@ -1,4 +1,3 @@
-# Required for Playwright on Streamlit Community Cloud
 libasound2
 libatk-bridge2.0-0
 libatk1.0-0
