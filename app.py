@@ -11,6 +11,14 @@ from scraper import scrape_and_extract
 if sys.platform == 'win32':
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
+@st.cache_resource(show_spinner=False)
+def install_playwright():
+    """Ensure Playwright browsers are installed for Streamlit Cloud."""
+    if sys.platform.startswith("linux"):
+        os.system("playwright install chromium")
+
+install_playwright()
+
 CONFIG_FILE = "config.json"
 
 def load_config():
