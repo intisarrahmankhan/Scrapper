@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+
+# API keys and sensitive config (CRITICAL)
+config.json
+.env
+
+# Python compilation files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Exported Data files
+*.csv
+*.xlsx
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
